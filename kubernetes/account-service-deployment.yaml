@@ -18,5 +18,8 @@ spec:
       containers:
       - name: ${application.name}
         image: ${deployment.image-name}:${deployment.image-version}
+        env:
+        - name: secret
+          value: "${deployment.secret}"
         ports:
         - containerPort: 80
