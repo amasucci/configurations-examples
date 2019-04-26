@@ -3,6 +3,7 @@ deployment:
   replicas: 3
   image-name: amasucci/account-service
   image-version: 2.0.21
+  secret: '{cipher}88717e467c345e57334910670834a778570fe16bd96d6fb37332d7201f1fdcf4'
 ---
 application:
   name: account-service
